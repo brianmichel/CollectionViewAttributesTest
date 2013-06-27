@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  CustomCell.h
 //  CollectionViewAttributesTest
 //
 //  Created by Brian Michel on 6/27/13.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface CustomCell : UICollectionViewCell
 
 @end

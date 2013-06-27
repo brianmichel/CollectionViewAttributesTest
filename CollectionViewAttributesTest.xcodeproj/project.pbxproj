@@ -17,8 +17,8 @@
 		486ABA6E177C739600BE18CA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 486ABA6D177C739600BE18CA /* Default@2x.png */; };
 		486ABA70177C739600BE18CA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 486ABA6F177C739600BE18CA /* Default-568h@2x.png */; };
 		486ABA73177C739600BE18CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486ABA72177C739600BE18CA /* ViewController.m */; };
-		486ABA76177C739600BE18CA /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 486ABA74177C739600BE18CA /* ViewController_iPhone.xib */; };
-		486ABA79177C739600BE18CA /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 486ABA77177C739600BE18CA /* ViewController_iPad.xib */; };
+		486ABA83177C73D700BE18CA /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 486ABA80177C73D700BE18CA /* CustomCell.m */; };
+		486ABA84177C73D700BE18CA /* CustomLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 486ABA82177C73D700BE18CA /* CustomLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +37,10 @@
 		486ABA6F177C739600BE18CA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		486ABA71177C739600BE18CA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		486ABA72177C739600BE18CA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		486ABA75177C739600BE18CA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		486ABA78177C739600BE18CA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		486ABA7F177C73D700BE18CA /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		486ABA80177C73D700BE18CA /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		486ABA81177C73D700BE18CA /* CustomLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLayout.h; sourceTree = "<group>"; };
+		486ABA82177C73D700BE18CA /* CustomLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +87,14 @@
 		486ABA5F177C739600BE18CA /* CollectionViewAttributesTest */ = {
 			isa = PBXGroup;
 			children = (
+				486ABA7F177C73D700BE18CA /* CustomCell.h */,
+				486ABA80177C73D700BE18CA /* CustomCell.m */,
+				486ABA81177C73D700BE18CA /* CustomLayout.h */,
+				486ABA82177C73D700BE18CA /* CustomLayout.m */,
 				486ABA68177C739600BE18CA /* AppDelegate.h */,
 				486ABA69177C739600BE18CA /* AppDelegate.m */,
 				486ABA71177C739600BE18CA /* ViewController.h */,
 				486ABA72177C739600BE18CA /* ViewController.m */,
-				486ABA74177C739600BE18CA /* ViewController_iPhone.xib */,
-				486ABA77177C739600BE18CA /* ViewController_iPad.xib */,
 				486ABA60177C739600BE18CA /* Supporting Files */,
 			);
 			path = CollectionViewAttributesTest;
@@ -165,8 +169,6 @@
 				486ABA6C177C739600BE18CA /* Default.png in Resources */,
 				486ABA6E177C739600BE18CA /* Default@2x.png in Resources */,
 				486ABA70177C739600BE18CA /* Default-568h@2x.png in Resources */,
-				486ABA76177C739600BE18CA /* ViewController_iPhone.xib in Resources */,
-				486ABA79177C739600BE18CA /* ViewController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +182,8 @@
 				486ABA66177C739600BE18CA /* main.m in Sources */,
 				486ABA6A177C739600BE18CA /* AppDelegate.m in Sources */,
 				486ABA73177C739600BE18CA /* ViewController.m in Sources */,
+				486ABA83177C73D700BE18CA /* CustomCell.m in Sources */,
+				486ABA84177C73D700BE18CA /* CustomLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,22 +196,6 @@
 				486ABA63177C739600BE18CA /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		486ABA74177C739600BE18CA /* ViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				486ABA75177C739600BE18CA /* en */,
-			);
-			name = ViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		486ABA77177C739600BE18CA /* ViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				486ABA78177C739600BE18CA /* en */,
-			);
-			name = ViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -312,6 +300,7 @@
 				486ABA7E177C739600BE18CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
